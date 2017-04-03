@@ -1,1 +1,10 @@
+#write a function that takes 3 inputs and inputs the loan amount
 
+def calculate_loan(amount, rate_percentage, time_months):
+	rate = rate_percentage / 100
+	time = time_months / 12
+	interest = amount * rate * time
+
+	return interest + amount
+
+print(calculate_loan(100,20, 12 ))
