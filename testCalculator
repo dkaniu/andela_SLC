@@ -1,0 +1,12 @@
+__author__ = 'kaniu'
+from andelafirst import calculate_loan
+import unittest
+
+class TestMyFunctions(unittest.TestCase):
+	def test_it_works(self):
+		self.assertEqual(calculate_loan(10000,12,12), 11200)
+	def test_input_are_numbers(self):
+		self.assertRaises(TypeError,calculate_loan(), '100' '12' '12')
+
+if __name__ == '__main__':
+    unittest.main()
